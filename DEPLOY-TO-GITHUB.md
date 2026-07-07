@@ -13,7 +13,26 @@ If you don't have one, sign up free at [https://github.com](https://github.com).
 3. Set visibility to **Public**
 4. Click **Create repository**
 
-## Step 3 — Upload your website files
+## Step 3 — Push with Git (recommended)
+
+Open **Git Bash** or **PowerShell** in your project folder and run:
+
+```powershell
+cd C:\Users\deepa\stock-market-academy
+```
+
+Create a new empty repo on GitHub named `the-sprinters-academy`, then run (replace `YOUR-USERNAME`):
+
+```powershell
+& "C:\Program Files\Git\bin\git.exe" remote add origin https://github.com/YOUR-USERNAME/the-sprinters-academy.git
+& "C:\Program Files\Git\bin\git.exe" push -u origin main
+```
+
+Sign in when GitHub asks for your username and password (use a **Personal Access Token** as the password).
+
+---
+
+## Step 3 (alternative) — Upload files manually
 
 Upload the contents of the **`docs`** folder from this project:
 
@@ -41,7 +60,7 @@ docs/
 2. Click **Pages** in the left sidebar
 3. Under **Build and deployment**:
    - **Source:** Deploy from a branch
-   - **Branch:** `main` → folder **`/ (root)`**
+   - **Branch:** `main` → folder **`/docs`**
    - Click **Save**
 
 Wait 1–3 minutes for deployment.
