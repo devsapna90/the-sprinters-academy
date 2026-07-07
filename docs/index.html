@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The_Sprinters Accacaddmy | Gold & Nifty 50 Courses by Amit Chaudhary</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="ticker-bar">
+    <div class="ticker-track" id="tickerTrack">
+      <span class="ticker-item">Loading market data...</span>
+    </div>
+  </div>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#" class="logo">
+        <span class="logo-icon">📊</span>
+        <span class="logo-text">The_Sprinters <span class="logo-accent">Accacaddmy</span></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#courses">Courses</a>
+        <a href="#instructor">Instructor</a>
+        <a href="#sessions">Sessions</a>
+        <a href="#enroll" class="btn-nav">Enroll Now</a>
+      </nav>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-grid-overlay"></div>
+    <div class="container hero-content">
+      <div class="hero-badge">India's Premier Trading Academy</div>
+      <h1 class="hero-title">
+        Master the Markets with<br />
+        <span class="gradient-text">Gold & Nifty 50</span> Expert Training
+      </h1>
+      <p class="hero-subtitle">
+        Learn professional trading strategies from <strong>Amit Chaudhary</strong> —
+        India's trusted course master with 12+ years of market experience and 5,000+ successful students.
+      </p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">5,000+</span>
+          <span class="stat-label">Students Trained</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">12+</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">54</span>
+          <span class="stat-label">Live Sessions</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">4.9★</span>
+          <span class="stat-label">Student Rating</span>
+        </div>
+      </div>
+      <div class="hero-actions">
+        <a href="#courses" class="btn btn-primary">Explore Courses</a>
+        <a href="#instructor" class="btn btn-outline">Meet Amit Chaudhary</a>
+      </div>
+    </div>
+    <div class="hero-chart">
+      <svg viewBox="0 0 400 120" class="chart-svg" aria-hidden="true">
+        <defs>
+          <linearGradient id="chartGrad" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#00c896" stop-opacity="0.4"/>
+            <stop offset="100%" stop-color="#00c896" stop-opacity="0"/>
+          </linearGradient>
+        </defs>
+        <path d="M0,90 L40,75 L80,80 L120,55 L160,60 L200,40 L240,45 L280,25 L320,30 L360,15 L400,20 L400,120 L0,120 Z" fill="url(#chartGrad)"/>
+        <polyline points="0,90 40,75 80,80 120,55 160,60 200,40 240,45 280,25 320,30 360,15 400,20" fill="none" stroke="#00c896" stroke-width="2.5"/>
+      </svg>
+    </div>
+  </section>
+
+  <section class="market-section">
+    <div class="container">
+      <div class="market-cards" id="marketCards">
+        <div class="market-card skeleton"></div>
+        <div class="market-card skeleton"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="courses-section" id="courses">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Our Programs</span>
+        <h2 class="section-title">Professional Trading Courses</h2>
+        <p class="section-desc">Comprehensive programs designed by Amit Chaudhary to take you from beginner to confident trader.</p>
+      </div>
+      <div class="courses-grid" id="coursesGrid"></div>
+    </div>
+  </section>
+
+  <section class="instructor-section" id="instructor">
+    <div class="container">
+      <div class="instructor-card" id="instructorCard">
+        <div class="instructor-avatar">
+          <div class="avatar-circle">AC</div>
+          <div class="avatar-badge">Course Master</div>
+        </div>
+        <div class="instructor-info">
+          <span class="section-tag">Your Mentor</span>
+          <h2 class="section-title" id="instructorName">Amit Chaudhary</h2>
+          <p class="instructor-title" id="instructorTitle"></p>
+          <p class="instructor-bio" id="instructorBio"></p>
+          <ul class="credentials-list" id="credentialsList"></ul>
+          <div class="instructor-metrics">
+            <div class="metric">
+              <span class="metric-value" id="instructorExp"></span>
+              <span class="metric-label">Experience</span>
+            </div>
+            <div class="metric">
+              <span class="metric-value" id="instructorStudents"></span>
+              <span class="metric-label">Students</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sessions-section" id="sessions">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Weekly Schedule</span>
+        <h2 class="section-title">Live Classes & Sessions</h2>
+        <p class="section-desc">Join Amit Chaudhary's interactive live sessions — ask questions, analyze charts, and trade together.</p>
+      </div>
+      <div class="sessions-table-wrap">
+        <table class="sessions-table">
+          <thead>
+            <tr>
+              <th>Day</th>
+              <th>Time</th>
+              <th>Session Topic</th>
+              <th>Course</th>
+            </tr>
+          </thead>
+          <tbody id="sessionsBody"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="enroll-section" id="enroll">
+    <div class="container">
+      <div class="enroll-wrapper">
+        <div class="enroll-info">
+          <span class="section-tag">Get Started</span>
+          <h2 class="section-title">Enroll in a Course Today</h2>
+          <p class="section-desc">Fill in your details and start your trading journey with Amit Chaudhary. Limited seats available for each batch.</p>
+          <ul class="enroll-benefits">
+            <li>✓ Lifetime access to recorded sessions</li>
+            <li>✓ Weekly live classes with Amit Chaudhary</li>
+            <li>✓ Private Telegram community access</li>
+            <li>✓ Certificate of completion</li>
+          </ul>
+        </div>
+        <form class="enroll-form" id="enrollForm">
+          <h3>Registration Form</h3>
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required />
+          </div>
+          <div class="form-group">
+            <label for="courseId">Select Course</label>
+            <select id="courseId" name="courseId" required>
+              <option value="">Choose a course...</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submitBtn">Enroll Now</button>
+          <div class="form-message" id="formMessage"></div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="logo-icon">📊</span>
+        <span class="logo-text">The_Sprinters <span class="logo-accent">Accacaddmy</span></span>
+        <p>Empowering traders across India with world-class market education.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <a href="#courses">Courses</a>
+        <a href="#instructor">Instructor</a>
+        <a href="#sessions">Sessions</a>
+        <a href="#enroll">Enroll</a>
+      </div>
+      <div class="footer-contact">
+        <h4>Contact</h4>
+        <p>📧 info@thesprintersaccacaddmy.in</p>
+        <p>📞 +91 98765 43210</p>
+        <p>📍 Mumbai, Maharashtra, India</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 The_Sprinters Accacaddmy. Course Master: <strong>Amit Chaudhary</strong>. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

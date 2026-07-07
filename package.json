@@ -1,0 +1,12 @@
+{
+  "name": "stock-market-academy",
+  "version": "1.0.0",
+  "description": "The_Sprinters Accacaddmy - Gold & Nifty 50 Courses by Amit Chaudhary",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["stock-market", "trading", "courses"],
+  "license": "MIT"
+}
